@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/style.css" rel="stylesheet">
+  <link href="../dist/skitter.styles.css" rel="stylesheet">
+  <link href="../dist/rslides.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/rslides.css">
+	<link rel="stylesheet" href="../dist/font-awesome.min.css">
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+    @font-face {
+      font-family: 'Avalon Regular';
+      src: url('/fonts/avalon/avalon-webfont.woff2') format('woff2'),
+          url('/fonts/avalon/Avalon-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Avalon Bold';
+      src: url('/fonts/avalon/avalon_bold-webfont.woff2') format('woff2'),
+          url('/fonts/avalon/avalon_bold-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+    *, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; -webkit-text-size-adjust: 100%;}
+
+    /* HTML5 display-role reset for older browsers */
+
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {display: block;}
+    body {line-height: 1;}
+    ul {list-style: none;}
+    blockquote, q {quotes: none;}
+    blockquote:before, blockquote:after,
+    q:before, q:after {content: '';content: none;}
+    table {border-collapse: collapse;border-spacing: 0;}
+    button, html input[type=button], input[type=reset], input[type=submit] {cursor: pointer; }
+    input:not([type='radio']):not([type='checkbox']), textarea,
+    form, label {-webkit-text-size-adjust: 100%;}
+    mark {background-color: transparent;color:inherit;}
+    /* end reset */
+  </style>
+
+  <title>SAMPLE TAILWIND SITE</title>
+</head>
+<body class="overflow-x-hidden ">
+  
+  <header>
+    <div class="wrapper w-[100%] block text-center max-w-[1400px] mx-[auto] my-[0]">
+      <div id="header_con"></div>
+    </div>
+  </header>
+
+  <div class="banner">
+      <div class="wrapper w-[100%] block text-center max-w-[1400px] mx-[auto] my-[0]">
+        <div class="bnr_con relative">
+          <div class="slider w-[1920px] mx-[auto] my-[0] ml-[-260px] relative block responsivestart:ml-[-29%] responsivestart:w-[150%]
+          desktop3:ml-[-408px]">
+            <div class="box_skitter box_skitter_large responsivestart:hidden">
+              <ul>
+                <li><img src="../images/1.jpg" alt="nurse nga parehag nawong sa akong ante" class="random"/></li>
+                <li><img src="../images/2.jpg" alt="lipay na mga med peepz kay sweldo man gikan" class="random"/></li>
+              </ul>
+            </div>
+            <ul class="rslides hidden responsivestart:block">
+              <li><img src="../images/1.jpg" alt="nurse nga parehag nawong sa akong ante" class="random"/></li>
+              <li><img src="../images/2.jpg" alt="lipay na mga med peepz kay sweldo man gikan" class="random"/></li>
+            </ul>
+          </div>
+
+          <div class="bnr_info absolute left-[0] right-[0] bottom-[0] w-[100%] mx-[auto] my-[0] py-[30px] bg-blackbg/[.5] z-20 text-whitebg
+          desktop5:px-[15px] before:absolute before:left-[-260px] before:bottom-[0] before:w-[260px] before:h-[100%] before:content-[''] before:bg-blackbg/[.5]
+          after:absolute after:right-[-260px] after:bottom-[0] after:w-[260px] after:h-[100%] after:content-[''] after:bg-blackbg/[.5]
+          responsivestart:relative responsivestart:bottom-0 responsivestart:border-b-2 responsivestart:border-solid responsivestart:border-blackbg
+          responsivestart:bg-redbg">
+            <h2 class="font-AvalonB text-headingtexts text-whitebg font-bold float-left w-2/5 text-left animate-animfadInLeft delay-75
+            desktop3:text-[43px] desktop3:pr-[20px] responsivestart:text-[32px] responsivestart:px-[0] responsivestart:py-[0] responsivestart:block responsivestart:w-[100%] responsivestart:text-center responsivestart:mb-[30px] responsivestart:animate-[none]">This Awesome <span class="block">Slogan is Temporary</span></h2>
+            <p class="font-Questrial text-normaltext leading-[30px] float-right w-3/5 mt-[15px] text-left animate-animfadInRight delay-100
+            responsivestart:float-none responsivestart:text-center responsivestart:w-[100%] responsivestart:animate-[none]">Additional business details will be uploaded on this website soon. You are reading dummy text as placeholders for this layout. Dummy text for the reader to review. Additional business details will be uploaded on this website soon.</p>
+            <div class="clearfix overflow-hidden clear-both"></div>
+          </div>
+
+          <div class="mobi_ban hidden">
+            <img src="../images/1.jpg" alt="nurse nga parehag nawong sa akong ante" class="random"/>
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <!-- Main -->
+<div class="main_area bg-[url('../images/main-bg.jpg')] bg-no-repeat bg-center desktop2:bg-[center_20%] responsivestart:bg-[''] responsivestart:bg-none">
+	<div class="wrapper w-[100%] block text-center max-w-[1400px] mx-[auto] my-[0]">
+		<div class="main_con relative min-h-[591px] before:w-[24%] before:h-[100%] before:content-[''] before:absolute before:top-0 before:left-[-260px] before:z-0 before:bg-gradient-to-r before:from-greenhilaw before:to-greenhilaw/[.0] after:w-[150%] after:h-[100%] after:content-[''] after:absolute after:top-0 after:right-[-260px] after:z-0 after:bg-gradient-to-r after:from-greenhinog/[.0] after:to-greenhilaw desktop2:before:right-0 responsivestart:py-[30px] responsivestart:px-[30px] responsivestart:before:hidden responsivestart:after:hidden responsivestart:min-h-0">
+			<main class="max-w-[573px] w-[100%] block absolute z-20 top-[50%] translate-y-[-50%] right-0 animate-animFadeIn
+      responsivestart:max-w-[100%] responsivestart:relative responsivestart:top-0 responsivestart:translate-y-0 responsivestart:left-0 responsivestart:text-center responsivestart:animate-[none]">
+				<h1 class="h1_title font-AvalonB text-mainh1span block text-left mb-[34px] text-redbg
+        responsivestart:text-center responsivestart:text-[45px] responsivestart:mb-[30px]"><span class="font-Questrial text-mainh1 block text-blackbg responsivestart:text-[27px]">Welcome to </span>Restoration <small class="font-Questrial text-mainh1small block text-blackbg
+        responsivestart:text-[27px]">of Health Medical Care, PLLC</small></h1>
+				<p class="font-Questrial text-normaltext leading-[30px] text-left responsivestart:text-center">Additional business details will be uploaded on this website soon. You are reading dummy text as placeholders for this layout. Dummy text for the reader to review. Words shown on this layout are placeholders. Contents are for display purposes only.  This space is reserved for more details about the company.</p>
+			</main>
+      <div class="clearfix overflow-hidden clear-both"></div>
+		</div>
+
+	</div>
+</div>
+<!-- End Main -->
+
+  <span class="back_top"></span>
+
+    </div> <!-- End Clearfix -->
+    </div> <!-- End Protect Me -->
+
+    <!--?php get_includes('ie');?-->
+
+    <!--
+    Solved HTML5 & CSS IE Issues
+    -->
+    <script src="../js/modernizr-custom-v2.7.1.min.js"></script>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+
+    <!--
+    Solved Psuedo Elements IE Issues
+    -->
+    <!-- <script src="../js/calcheight.js"></script> -->
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.skitter.min.js"></script> 
+    <script src="../js/responsiveslides.min.js"></script>
+    <script src="../js/plugins.js"></script>
+
+    <!--?php wp_footer(); ?-->
+
+
+</body>
+</html>
